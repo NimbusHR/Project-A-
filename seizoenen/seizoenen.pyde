@@ -5,18 +5,19 @@ screen = 0
 def setup():
     global screen, img, f, lente, zomer, herfst, winter, lentegeselecteerd, zomergeselecteerd, herfstgeselecteerd, wintergeselecteerd
     #achtergrond
-    size(1024, 768)
+    size(1000, 700)
     img = loadImage("wp2967401.jpg")
+    img.resize(1000, 700)
     background(img)
     f = createFont("Some Time Later.otf", 16, True)
     lente = loadImage("Lente2.jpg")
-    lente.resize(1024, 768)
+    lente.resize(1000, 700)
     zomer = loadImage("Zomer.jpg")
-    zomer.resize(1024, 768)
+    zomer.resize(1000, 700)
     herfst = loadImage("Herfst.jpg")
-    herfst.resize(1024, 768)
+    herfst.resize(1000, 700)
     winter = loadImage("Winter.jpg")
-    winter.resize(1024, 768)
+    winter.resize(1000, 700)
 
 
 def draw():
